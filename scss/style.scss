@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import './btn.scss';
+
+
 // Colors
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -54,6 +57,12 @@ $darkgrey: #353535;
     align-items: center;
 }
 
+// Ombres
+@mixin box-shadow {
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+// Général
 body {
     @include Roboto-light;
     margin: 0;
@@ -82,11 +91,9 @@ body {
     }
     &--location {
         z-index: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flex-row();
         width: 100%;
+        margin-top: 0;
         background-color: $accent-color;
         box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 0.4509803922);
         color: $darkgrey;
@@ -100,3 +107,62 @@ body {
 }
 
 // Hero
+.hero__container {
+    background-color: $section-color;
+    margin: 0;
+    text-align: center;
+    padding: 39px 0 57px;
+    &--title {
+        margin: 0;
+        @include Roboto-bold();
+        padding: 0 50px;
+    }
+    &--subtitle {
+        padding: 0 30px 27px 30px;
+    }
+}
+
+// Steps
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 48px 20px 50px 20px;
+    &__title {
+        margin: 0 0 26px 0;
+    }
+    & .step-card {
+        @include flex-row;
+        margin-bottom: 25px;
+    }
+    & .step-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $section-color;
+        border-radius: 20px;
+        width: 322px;
+        height: 72px;
+        z-index: 0;
+        position: relative;
+        right: 11px;
+        @include box-shadow();
+        & i {
+            margin: 0 27px;
+        }
+    }
+    & .step-number {
+        color: white;
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 5px 10px;
+        z-index: 1;
+        @include Roboto-medium();
+    }
+}
+
+// Restaurants
+.restaurants {
+    background-color: $section-color;
+    padding: 54px 20px 66px 20px;
+}
