@@ -1,4 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__container--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.4509803922);
+}
+.header__container--img {
+  width: 162px;
+  height: 44px;
+  align-self: center;
+}
+.header__container--location {
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 0.4509803922);
+  color: #353535;
+}
+.header__container--locationIcon {
+  padding-right: 17px;
+}
+.header__container--locationTxt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16;
+}
 
 /*# sourceMappingURL=style.css.map */

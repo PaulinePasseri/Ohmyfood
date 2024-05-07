@@ -4,6 +4,99 @@
 // Colors
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+$lightgreen: #99E2D0;
+$darkgreen: #008766;
+$section-color: #F6F6F6;
+$accent-color: #EAEAEA;
+$darkgrey: #353535;
 
 // Polices
+@mixin Shrikhand {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+@mixin Roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24;
+}
+
+@mixin Roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16;
+}
+
+@mixin Roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18;
+}
+
+// Flex
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    @include Roboto-light;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+// Header
+.header__container {
+    @include flex-column();
+    &--logo {
+        @include flex-row();
+        width: 100%;
+        z-index: 1;
+        margin-top: 14px;
+        margin-bottom: 5px;
+        box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.4509803922);
+    }
+    &--img {
+        width: 162px;
+        height: 44px;
+        align-self: center;
+    }
+    &--location {
+        z-index: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 0.4509803922);
+        color: $darkgrey;
+    }
+    &--locationIcon {
+        padding-right: 17px;
+    }
+    &--locationTxt {
+        @include Roboto-medium();
+    }
+}
+
+// Hero
