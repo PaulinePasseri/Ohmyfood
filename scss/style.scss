@@ -3,9 +3,11 @@
 
 @import './btn.scss';
 @import './heart.scss';
+@import './load.scss';
+@import './restaurant.scss';
 
 
-// Colors
+// Couleurs
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $lightgreen: #99E2D0;
@@ -135,7 +137,7 @@ a {
     }
 }
 
-// Steps
+// Etapes
 .steps {
     display: flex;
     flex-direction: column;

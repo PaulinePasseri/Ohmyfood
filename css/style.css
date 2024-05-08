@@ -27,13 +27,12 @@
 
 .heart-icon {
   cursor: pointer;
-  font-weight: bold;
 }
 
 .heart-icon2 {
   cursor: pointer;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 100ms;

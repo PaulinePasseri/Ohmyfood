@@ -1,3 +1,4 @@
+// Mise en forme et animation de l'icône coeur
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 
@@ -16,13 +17,12 @@ $secondary-color: #FF79DA;
 
 .heart-icon {
     cursor: pointer;
-    font-weight: bold;
 }
 
 .heart-icon2 {
     cursor: pointer;
     background: -webkit-linear-gradient(90deg, $secondary-color, $primary-color);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transition: 100ms;
