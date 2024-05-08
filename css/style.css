@@ -238,4 +238,41 @@ a {
   font-size: 17px;
 }
 
+.footer__container {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+.footer__container--title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  font-size: 18px;
+  margin: 0 0 16px 0;
+}
+.footer__container--links {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16;
+  font-weight: 400;
+}
+.footer__container--link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 7px;
+}
+.footer__container--link p {
+  margin: 0;
+}
+.footer__container--link i {
+  padding-right: 11px;
+  width: 22px;
+}
+
 /*# sourceMappingURL=style.css.map */

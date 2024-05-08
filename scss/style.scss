@@ -251,3 +251,35 @@ a {
         font-size: 17px;
     }
 }
+
+// Footer
+.footer__container {
+    background-color: $darkgrey;
+    color: white;
+    padding: 22px 25px;
+    &--title {
+        @include Shrikhand();
+        font-size: 18px;
+        margin: 0 0 16px 0;
+    }
+    &--links {
+       display: flex;
+       flex-direction: column; 
+       @include Roboto-medium();
+       font-weight: 400;
+    }
+    &--link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 7px;
+        & p {
+            margin: 0;
+        }
+        & i {
+            padding-right: 11px;
+            width: 22px;
+        }
+    }
+}
