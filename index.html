@@ -55,27 +55,29 @@
       </section>
       <section class="steps">
         <h2 class="steps__title">Fonctionnement</h2>
-        <article class="step-card">
-          <div class="step-number">1</div>
-          <div class="step-info">
-            <i class="fa-solid fa-mobile-screen-button stepIcon1"></i>
-            <h3 class="steps__subtitle">Choisissez un restaurant</h3>
-          </div>
-        </article>
-        <article class="step-card">
-          <div class="step-number">2</div>
-          <div class="step-info">
-            <i class="fa-solid fa-list stepIcon2"></i>
-            <h3 class="steps__subtitle">Composez votre menu</h3>
-          </div>
-        </article>
-        <article class="step-card">
-          <div class="step-number">3</div>
-          <div class="step-info">
-            <i class="fa-solid fa-store stepIcon3"></i>
-            <h3 class="steps__subtitle">Dégustez au restaurant</h3>
-          </div>
-        </article>
+        <div class="step-cards">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-info">
+              <i class="fa-solid fa-mobile-screen-button stepIcon1"></i>
+              <h3 class="steps__subtitle">Choisissez un restaurant</h3>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-info">
+              <i class="fa-solid fa-list stepIcon2"></i>
+              <h3 class="steps__subtitle">Composez votre menu</h3>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-info">
+              <i class="fa-solid fa-store stepIcon3"></i>
+              <h3 class="steps__subtitle">Dégustez au restaurant</h3>
+            </div>
+          </article>
+        </div>
       </section>
       <a href="#" id="restaurants-anchor"></a>
       <section class="restaurants">
@@ -152,16 +154,22 @@
       <footer class="footer__container">
         <h2 class="footer__container--title">ohmyfood</h2>
         <div class="footer__container--links">
-          <a href="#" class="footer__container--link">
-            <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
-          </a>
-          <a href="#" class="footer__container--link">
-            <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
-          </a>
-          <a href="#" class="footer__container--link">Mentions légales</a>
-          <a href="mailto:ohmyfood@gmail.com" class="footer__container--link"
-            >Contact</a
-          >
+          <div class="footer__container--restaurant">
+            <a href="#" class="footer__container--link">
+              <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+            </a>
+            <a href="#" class="footer__container--link">
+              <p>
+                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+              </p>
+            </a>
+          </div>
+          <div class="footer__container--contact">
+            <a href="#" class="footer__container--link">Mentions légales</a>
+            <a href="mailto:ohmyfood@gmail.com" class="footer__container--link"
+              >Contact</a
+            >
+          </div>
         </div>
       </footer>
     </div>

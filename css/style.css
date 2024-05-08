@@ -49,6 +49,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 html {
@@ -57,6 +59,10 @@ html {
 
 .container {
   width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -298,6 +304,49 @@ a {
 .footer__container--link i {
   padding-right: 11px;
   width: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+  .steps, .restaurants {
+    padding: 30px 180px;
+  }
+  .step-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .restaurant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 95px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 31px;
+  }
+  .footer__container--title {
+    margin: 0 50px 5px 16px;
+  }
+  .footer__container--links {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__container--restaurant, .footer__container--contact {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 45px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1270px) {
+  .step-cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
