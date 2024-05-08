@@ -21,8 +21,10 @@ $secondary-color: #FF79DA;
     border-radius: 25px;
     @include Roboto-medium();
     @include box-shadow();
+    opacity: 1;
+    transition: 350ms;
     &:hover {
-        background: linear-gradient(0deg, lighten($primary-color, 5%), lighten($secondary-color, 5%));
-        box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 8px 6px rgba(0, 0, 0, 0.16);
+        opacity: 0.8;
     }
 }
