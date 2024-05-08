@@ -1,0 +1,32 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+
+@mixin Roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18;
+}
+
+.fa-heart {
+    position: absolute;
+    font-size: 20px;
+    left: 85%;
+}
+
+.heart-icon {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.heart-icon2 {
+    cursor: pointer;
+    background: -webkit-linear-gradient(90deg, $secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: 100ms;
+    &:hover {
+        opacity: 1;
+    }
+}
