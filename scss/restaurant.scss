@@ -1,0 +1,146 @@
+// Couleurs
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$lightgreen: #99E2D0;
+$darkgreen: #008766;
+$section-color: #F6F6F6;
+$accent-color: #EAEAEA;
+$darkgrey: #353535;
+
+// Polices
+@mixin Shrikhand {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+@mixin Roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24;
+}
+
+@mixin Roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16;
+}
+
+@mixin Roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18;
+}
+
+// Flex
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Ombres
+@mixin box-shadow {
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+// Header
+.header__container {
+    @include flex-column();
+    &--navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+    &--arrow {
+        font-size: 20px;
+        position: absolute;
+        left: 5%;
+    }
+    &--img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+        position: relative;
+        bottom: 5px;
+        z-index: 0;
+        margin: 0;
+    }
+}
+
+// Menu
+.menu__container {
+    background-color: $section-color;
+    padding: 0 13px 40px 13px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    bottom: 60px;
+    margin: 0 0 -60px 0;
+    &--title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 4px;
+        & h1 {
+        @include Shrikhand();
+        margin: 0;
+        }
+    }
+    &--btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.menu__section {
+    margin-bottom: 40px;
+    &--title {
+        border-bottom: 3px solid $lightgreen;
+        width: 40px;
+        & h2 {
+            margin: 0 0 5px 0;
+            @include Roboto-light();
+            font-size: 16px;
+        }
+    }
+    &--dishes {
+        display: flex;
+        flex-direction: column;
+    }
+    &--dishCard {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 12px;
+        border-radius: 15px;
+        padding: 15px;
+        @include box-shadow();
+        & h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+        & p {
+            margin: 5px 0 0 0;
+            font-size: 15px;
+        }
+    }
+    &--dishPrice {
+        @include Roboto-bold();
+    }
+}

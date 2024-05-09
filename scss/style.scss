@@ -296,6 +296,10 @@ a {
 
 // Responsive 
 @media screen and (min-width:1024px) {
+    .header__container--logo {
+        padding: 20px 0;
+        margin-top: 0;
+    }
     .steps, .restaurants {
         padding: 30px 180px;
     }
