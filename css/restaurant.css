@@ -54,6 +54,7 @@
 
 .menu__section {
   margin-bottom: 40px;
+  max-width: 634px;
 }
 .menu__section--title {
   border-bottom: 3px solid #99E2D0;
@@ -70,6 +71,7 @@
 .menu__section--dishes {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .menu__section--dishCard {
   display: flex;
@@ -95,6 +97,25 @@
   font-weight: 700;
   font-style: normal;
   font-size: 24;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__section {
+    width: 100%;
+    min-width: 370px;
+  }
+  .menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__container--title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=restaurant.css.map */

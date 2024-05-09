@@ -108,6 +108,7 @@ $darkgrey: #353535;
 
 .menu__section {
     margin-bottom: 40px;
+    max-width: 634px;
     &--title {
         border-bottom: 3px solid $lightgreen;
         width: 40px;
@@ -120,6 +121,7 @@ $darkgrey: #353535;
     &--dishes {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     &--dishCard {
         display: flex;
@@ -142,5 +144,22 @@ $darkgrey: #353535;
     }
     &--dishPrice {
         @include Roboto-bold();
+    }
+}
+
+// Responsive 
+@media screen and (min-width:1024px) {
+    .menu__section {
+        width: 100%;
+        min-width: 370px;
+    }
+    .menu__container {
+        @include flex-column();
+        &--title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
