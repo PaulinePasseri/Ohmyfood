@@ -14,7 +14,7 @@
 .header__container--arrow {
   font-size: 20px;
   position: absolute;
-  left: 5%;
+  left: 23px;
 }
 .header__container--img {
   width: 100%;
@@ -141,7 +141,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
   }
 }
 

@@ -9,17 +9,26 @@ $secondary-color: #FF79DA;
     font-size: 18;
 }
 
-.fa-heart {
+// Page d'accueil
+.heart-position {
     position: absolute;
-    font-size: 20px;
-    left: 85%;
+    right: 25px;
 }
 
+// Page restaurant
+.heart-position2 {
+    position: absolute;
+    right: 20px;
+}
+
+// Animation
 .heart-icon {
     cursor: pointer;
+    font-size: 24px;
 }
 
 .heart-icon2 {
+    font-size: 24px;
     cursor: pointer;
     background: -webkit-linear-gradient(90deg, $secondary-color, $primary-color);
     background-clip: text;
@@ -31,9 +40,15 @@ $secondary-color: #FF79DA;
     }
 }
 
-@media screen and (min-width:970px) {
-    .fa-heart {
-        position: absolute;
-        left: 85%;
+// Responsive
+@media screen and (min-width:660px) {
+    .heart-position2 {
+        right: 150px;
+    }
+}
+
+@media screen and (min-width:930px) {
+    .heart-position2 {
+        right: 250px;
     }
 }

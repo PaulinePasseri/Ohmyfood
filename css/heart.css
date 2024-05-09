@@ -1,14 +1,20 @@
-.fa-heart {
+.heart-position {
   position: absolute;
-  font-size: 20px;
-  left: 85%;
+  right: 25px;
+}
+
+.heart-position2 {
+  position: absolute;
+  right: 20px;
 }
 
 .heart-icon {
   cursor: pointer;
+  font-size: 24px;
 }
 
 .heart-icon2 {
+  font-size: 24px;
   cursor: pointer;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -20,10 +26,14 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 970px) {
-  .fa-heart {
-    position: absolute;
-    left: 85%;
+@media screen and (min-width: 660px) {
+  .heart-position2 {
+    right: 150px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .heart-position2 {
+    right: 250px;
   }
 }
 

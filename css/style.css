@@ -21,17 +21,23 @@
   opacity: 0.8;
 }
 
-.fa-heart {
+.heart-position {
   position: absolute;
-  font-size: 20px;
-  left: 85%;
+  right: 25px;
+}
+
+.heart-position2 {
+  position: absolute;
+  right: 20px;
 }
 
 .heart-icon {
   cursor: pointer;
+  font-size: 24px;
 }
 
 .heart-icon2 {
+  font-size: 24px;
   cursor: pointer;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -43,54 +49,14 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 970px) {
-  .fa-heart {
-    position: absolute;
-    left: 85%;
+@media screen and (min-width: 660px) {
+  .heart-position2 {
+    right: 150px;
   }
 }
-.loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeOut 2s ease-in-out 2s both;
-}
-
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(farthest-side, #9356DC 94%, rgba(0, 0, 0, 0)), radial-gradient(farthest-side, #FF79DA 94%, rgba(0, 0, 0, 0)), #9356DC;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: l4 1.5s infinite, fadeOut 1s ease-in-out 2s forwards;
-}
-
-@keyframes l4 {
-  0% {
-    background-size: 0 0, 0 0;
-  }
-  30%, 50% {
-    background-size: 0 0, 120% 120%;
-  }
-  80%, 100% {
-    background-size: 120% 120%, 120% 120%;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+@media screen and (min-width: 930px) {
+  .heart-position2 {
+    right: 250px;
   }
 }
 .header__container {
@@ -109,7 +75,7 @@
 .header__container--arrow {
   font-size: 20px;
   position: absolute;
-  left: 5%;
+  left: 23px;
 }
 .header__container--img {
   width: 100%;
@@ -236,7 +202,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
   }
 }
 .checkIcon {
@@ -302,10 +267,8 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  z-index: 1;
   margin-top: 14px;
   margin-bottom: 5px;
-  box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.4509803922);
 }
 .header__container--vector {
   width: 162px;
@@ -313,9 +276,6 @@ a {
   align-self: center;
 }
 .header__container--location {
-  z-index: 0;
-  position: relative;
-  bottom: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -323,7 +283,7 @@ a {
   width: 100%;
   margin-top: 0;
   background-color: #EAEAEA;
-  box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 0.4509803922);
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.45);
   color: #353535;
 }
 .header__container--locationIcon {
@@ -428,7 +388,6 @@ a {
 }
 
 .restaurant-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -439,13 +398,16 @@ a {
   border-radius: 15px;
   z-index: 0;
 }
+.restaurant-card a {
+  position: relative;
+}
 .restaurant-card .restaurant-new {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 5%;
-  left: 72%;
+  top: 20px;
+  right: 20px;
   z-index: 1;
   width: 80px;
   height: 29px;
@@ -547,9 +509,6 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 50px;
-  }
-  .restaurant-cards .restaurant-new {
-    left: 76%;
   }
   .footer__container {
     display: flex;

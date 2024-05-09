@@ -97,10 +97,8 @@ a {
     &--logo {
         @include flex-row();
         width: 100%;
-        z-index: 1;
         margin-top: 14px;
         margin-bottom: 5px;
-        box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.4509803922);
     }
     &--vector {
         width: 162px;
@@ -108,14 +106,11 @@ a {
         align-self: center;
     }
     &--location {
-        z-index: 0;
-        position: relative;
-        bottom: 5px;
         @include flex-row();
         width: 100%;
         margin-top: 0;
         background-color: $accent-color;
-        box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 0.4509803922);
+        box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.45);
         color: $darkgrey;
     }
     &--locationIcon {
@@ -209,7 +204,6 @@ a {
 }
 
 .restaurant-card {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -219,13 +213,16 @@ a {
     background-color: white;
     border-radius: 15px;
     z-index: 0;
+    & a {
+        position: relative;
+    }
     & .restaurant-new {
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 5%;
-        left: 72%;
+        top: 20px;
+        right: 20px;
         z-index: 1;
         width: 80px;
         height: 29px;
@@ -317,9 +314,6 @@ a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 50px;
-        & .restaurant-new {
-            left: 76%;
-        }
     }
 
     .footer__container {
