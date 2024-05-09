@@ -59,6 +59,7 @@ $darkgrey: #353535;
 // Header
 .header__container {
     @include flex-column();
+    position: relative;
     &--navbar {
         display: flex;
         flex-direction: row;
@@ -88,7 +89,8 @@ $darkgrey: #353535;
     border-radius: 40px 40px 0 0;
     position: relative;
     bottom: 60px;
-    margin: 0 0 -60px 0;
+    margin: 0 auto -60px auto;
+    max-width: 1055px;
     &--title {
         display: flex;
         flex-direction: row;
