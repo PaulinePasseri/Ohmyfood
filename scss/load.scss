@@ -2,44 +2,45 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 
-// .loading-overlay {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(255, 255, 255, 0.8); 
-//     z-index: 2; 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     animation: fadeOut 2s ease-in-out 2s both;
-// }
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 2s ease-in-out 2s both;
+}
 
-// .loader {
-//     width: 40px;
-//     aspect-ratio: 1;
-//     border-radius: 50%;
-//     background:
-//         radial-gradient(farthest-side,#9356DC 94%,#0000),
-//         radial-gradient(farthest-side,#FF79DA 94%,#0000),
-//         #9356DC;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     animation: l4 1.5s infinite, fadeOut 1s ease-in-out 2s forwards; 
-// }
-// @keyframes l4 {
-//     0% {background-size:0 0,0 0
-//     }
-//     30%, 50%  {background-size:0 0,120% 120%
-//     }
-//     80%, 100% {background-size:120% 120%,120% 120%
-//     }
-// }
+.loader {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side,#9356DC 94%,#0000),
+        radial-gradient(farthest-side,#FF79DA 94%,#0000),
+        #9356DC;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: l4 1.5s infinite, fadeOut 1s ease-in-out 2s forwards; 
+}
+@keyframes l4 {
+    0% {background-size:0 0,0 0
+    }
+    30%, 50%  {background-size:0 0,120% 120%
+    }
+    80%, 100% {background-size:120% 120%,120% 120%
+    }
+}
 
-// @keyframes fadeOut {
-//     0% { opacity: 1; 
-//     }
-//     100% { opacity: 0; 
-//     }
-// }
+@keyframes fadeOut {
+    0% { opacity: 1; 
+    }
+    100% { opacity: 0;
+        display: none; 
+    } 
+}
