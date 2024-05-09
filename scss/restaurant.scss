@@ -134,6 +134,7 @@ $darkgrey: #353535;
         margin-top: 12px;
         border-radius: 15px;
         height: 75px;
+        cursor: pointer;
         @include box-shadow();
     }
     &--dishTxt {
