@@ -46,7 +46,7 @@
 @media screen and (min-width: 970px) {
   .fa-heart {
     position: absolute;
-    left: 65%;
+    left: 85%;
   }
 }
 .header__container {
@@ -378,6 +378,8 @@ a {
 .restaurant-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 18px;
 }
 
@@ -387,6 +389,8 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  max-width: 490px;
+  min-width: 350px;
   background-color: white;
   border-radius: 15px;
   z-index: 0;
@@ -499,7 +503,9 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 50px;
-    column-gap: 95px;
+  }
+  .restaurant-cards .restaurant-new {
+    left: 76%;
   }
   .footer__container {
     display: flex;
