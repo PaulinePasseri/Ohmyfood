@@ -126,7 +126,7 @@
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 660px) {
   .menu__section {
     width: 100%;
     min-width: 370px;

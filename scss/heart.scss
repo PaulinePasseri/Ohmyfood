@@ -30,3 +30,10 @@ $secondary-color: #FF79DA;
         opacity: 1;
     }
 }
+
+@media screen and (min-width:970px) {
+    .fa-heart {
+        position: absolute;
+        left: 65%;
+    }
+}
