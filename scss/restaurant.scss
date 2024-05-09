@@ -133,19 +133,42 @@ $darkgrey: #353535;
         background-color: white;
         margin-top: 12px;
         border-radius: 15px;
-        padding: 15px;
+        height: 75px;
         @include box-shadow();
+    }
+    &--dishTxt {
+        padding: 15px;
+        width: calc(100% - 59px);
+        overflow: hidden;
         & h3 {
             font-size: 18px;
             margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         & p {
             margin: 5px 0 0 0;
             font-size: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
-    &--dishPrice {
-        @include Roboto-bold();
+    &--dishCheck {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        & i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & p {
+            @include Roboto-bold();
+            padding-right: 15px;
+            justify-content: flex-end;
+        }
     }
 }
 

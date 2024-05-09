@@ -6,6 +6,7 @@
   padding: 13px 19px;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   border-radius: 25px;
+  cursor: default;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -127,22 +128,45 @@
   background-color: white;
   margin-top: 12px;
   border-radius: 15px;
-  padding: 15px;
+  height: 75px;
   box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
 }
-.menu__section--dishCard h3 {
+.menu__section--dishTxt {
+  padding: 15px;
+  width: calc(100% - 59px);
+  overflow: hidden;
+}
+.menu__section--dishTxt h3 {
   font-size: 18px;
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.menu__section--dishCard p {
+.menu__section--dishTxt p {
   margin: 5px 0 0 0;
   font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.menu__section--dishPrice {
+.menu__section--dishCheck {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.menu__section--dishCheck i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__section--dishCheck p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24;
+  padding-right: 15px;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 1024px) {
@@ -163,6 +187,30 @@
     justify-content: center;
   }
 }
+.checkIcon {
+  background-color: #99E2D0;
+  color: white;
+  width: 59px;
+  height: 75px;
+  margin: 0;
+  border-radius: 0 15px 15px 0;
+  font-size: 22px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 400ms;
+}
+
+.checkPrice {
+  margin-right: -59px;
+  transition: 400ms;
+}
+
+.menu__section--dishCard:hover .checkIcon,
+.menu__section--dishCard:hover .checkPrice {
+  transform: scaleX(1);
+  margin-right: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
