@@ -154,6 +154,7 @@
   display: flex;
   flex-direction: row;
   align-items: end;
+  overflow: hidden;
 }
 .menu__section--dishCheck i {
   display: flex;
@@ -190,14 +191,14 @@
 .checkIcon {
   background-color: #99E2D0;
   color: white;
-  width: 59px;
+  width: 75px;
   height: 75px;
   margin: 0;
   border-radius: 0 15px 15px 0;
   font-size: 22px;
-  transform: scaleX(0);
+  transform: translateX(100%);
   transform-origin: right;
-  transition: 400ms;
+  transition: all 400ms;
 }
 
 .checkPrice {
@@ -207,7 +208,7 @@
 
 .menu__section--dishCard:hover .checkIcon,
 .menu__section--dishCard:hover .checkPrice {
-  transform: scaleX(1);
+  transform: translateX(0);
   margin-right: 0;
 }
 

@@ -5,14 +5,14 @@ $lightgreen: #99E2D0;
 .checkIcon {
     background-color: $lightgreen;
     color: white;
-    width: 59px;
+    width: 75px;
     height: 75px;
     margin: 0;
     border-radius: 0 15px 15px 0;
     font-size: 22px;
-    transform: scaleX(0);
+    transform: translateX(100%);
     transform-origin: right;
-    transition: 400ms;
+    transition: all 400ms;
 }
 
 .checkPrice {
@@ -22,6 +22,6 @@ $lightgreen: #99E2D0;
 
 .menu__section--dishCard:hover .checkIcon,
 .menu__section--dishCard:hover .checkPrice {
-    transform: scaleX(1);
+    transform: translateX(0);
     margin-right: 0;
 }
