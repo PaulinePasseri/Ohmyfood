@@ -21,14 +21,8 @@
   opacity: 0.8;
 }
 
-.heart-position {
-  position: absolute;
-  right: 25px;
-}
-
-.heart-position2 {
-  position: absolute;
-  right: 20px;
+input[type=checkbox] {
+  display: none;
 }
 
 .heart-icon {
@@ -43,10 +37,23 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  transition: 100ms;
+  transition: 100ms ease;
 }
-.heart-icon2:hover {
+
+input[type=checkbox]:checked + .heart-container .heart-icon2 {
   opacity: 1;
+}
+
+.heart-position {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.heart-position2 {
+  position: absolute;
+  right: 20px;
+  top: 40px;
 }
 
 @media screen and (min-width: 660px) {
@@ -238,6 +245,7 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 
 html {

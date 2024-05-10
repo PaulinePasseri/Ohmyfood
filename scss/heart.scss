@@ -9,17 +9,10 @@ $secondary-color: #FF79DA;
     font-size: 18;
 }
 
-// Page d'accueil
-.heart-position {
-    position: absolute;
-    right: 25px;
+input[type="checkbox"] {
+    display: none;
 }
 
-// Page restaurant
-.heart-position2 {
-    position: absolute;
-    right: 20px;
-}
 
 // Animation
 .heart-icon {
@@ -34,10 +27,25 @@ $secondary-color: #FF79DA;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    transition: 100ms;
-    &:hover {
-        opacity: 1;
-    }
+    transition: 100ms ease;
+}
+
+input[type="checkbox"]:checked + .heart-container .heart-icon2 {
+    opacity: 1;
+}
+
+// Page d'accueil
+.heart-position {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+// Page restaurant
+.heart-position2 {
+    position: absolute;
+    right: 20px;
+    top: 40px;
 }
 
 // Responsive
