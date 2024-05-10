@@ -63,7 +63,7 @@ $darkgrey: #353535;
 
 // Ombres
 @mixin box-shadow {
-    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
 // Général
@@ -146,11 +146,11 @@ a {
     &__title {
         margin: 0 0 26px 0;
     }
-    & .step-card {
+    &__card {
         @include flex-row;
         margin-bottom: 25px;
     }
-    & .step-info {
+    &__card--info {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -160,7 +160,6 @@ a {
         height: 72px;
         z-index: 0;
         position: relative;
-        right: 11px;
         @include box-shadow();
         @include Roboto-medium();
         & i {
@@ -176,12 +175,14 @@ a {
             color: $primary-color;
         }
     }
-    & .step-number {
+    &__card--number {
         color: white;
         background-color: $primary-color;
         border-radius: 20px;
         padding: 5px 10px;
         z-index: 1;
+        position: absolute;
+        left: -15px;
         @include Roboto-medium();
     }
 }
@@ -193,17 +194,17 @@ a {
     & h2 {
         margin-top: 0;
     }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
 }
 
-.restaurant-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-}
 
-.restaurant-card {
+.restaurant__card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -216,7 +217,7 @@ a {
     & a {
         position: relative;
     }
-    & .restaurant-new {
+    &--new {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -240,27 +241,27 @@ a {
         object-fit: cover;
         margin-top: auto;
     }
+    &--info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 16px 25px 12px 13px;
+        & h3, p {
+            margin: 0;
+        }
+        & h3 {
+            @include Roboto-bold();
+            font-size: 18px;
+        }
+        & p {
+            @include Roboto-light();
+            font-size: 17px;
+        }
+    }
 }
 
-.restaurant-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 16px 25px 12px 13px;
-    & h3, p {
-        margin: 0;
-    }
-    & h3 {
-        @include Roboto-bold();
-        font-size: 18px;
-    }
-    & p {
-        @include Roboto-light();
-        font-size: 17px;
-    }
-}
 
 // Footer
 .footer__container {
@@ -300,16 +301,21 @@ a {
         padding: 20px 0;
         margin-top: 0;
     }
+    .header__container--location {
+        box-shadow: 0 0 0 0;
+    }
     .steps, .restaurants {
         padding: 30px 180px;
     }
     
-    .step-cards {
+    .steps__cards {
         display: flex;
         flex-direction: row;
+        & .steps__card {
+            margin: 0 23px 25px 13px;
+        }
     }
-
-    .restaurant-cards {
+    .restaurants__cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -339,8 +345,16 @@ a {
 }
 
 @media (min-width:1024px) and (max-width:1270px) {
-    .step-cards {
+    .steps__cards {
         display: flex;
         flex-direction: column;
     }
+}
+
+@media (min-width:545px) and (max-width:1024px) {
+    .restaurants__title, .steps__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
 }

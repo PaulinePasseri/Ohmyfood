@@ -323,14 +323,14 @@ a {
 .steps__title {
   margin: 0 0 26px 0;
 }
-.steps .step-card {
+.steps__card {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
 }
-.steps .step-info {
+.steps__card--info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -340,31 +340,32 @@ a {
   height: 72px;
   z-index: 0;
   position: relative;
-  right: 11px;
-  box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16;
 }
-.steps .step-info i {
+.steps__card--info i {
   margin: 0 27px;
 }
-.steps .step-info .stepIcon1 {
+.steps__card--info .stepIcon1 {
   color: #353535;
 }
-.steps .step-info .stepIcon2 {
+.steps__card--info .stepIcon2 {
   color: #7E7E7E;
 }
-.steps .step-info .stepIcon3 {
+.steps__card--info .stepIcon3 {
   color: #9356DC;
 }
-.steps .step-number {
+.steps__card--number {
   color: white;
   background-color: #9356DC;
   border-radius: 20px;
   padding: 5px 10px;
   z-index: 1;
+  position: absolute;
+  left: -15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -378,8 +379,7 @@ a {
 .restaurants h2 {
   margin-top: 0;
 }
-
-.restaurant-cards {
+.restaurants__cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -387,7 +387,7 @@ a {
   gap: 18px;
 }
 
-.restaurant-card {
+.restaurant__card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -398,10 +398,10 @@ a {
   border-radius: 15px;
   z-index: 0;
 }
-.restaurant-card a {
+.restaurant__card a {
   position: relative;
 }
-.restaurant-card .restaurant-new {
+.restaurant__card--new {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -421,15 +421,14 @@ a {
   border-radius: 2px;
   text-align: center;
 }
-.restaurant-card img {
+.restaurant__card img {
   width: 100%;
   height: 175px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   margin-top: auto;
 }
-
-.restaurant-info {
+.restaurant__card--info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -437,17 +436,17 @@ a {
   position: relative;
   padding: 16px 25px 12px 13px;
 }
-.restaurant-info h3, .restaurant-info p {
+.restaurant__card--info h3, .restaurant__card--info p {
   margin: 0;
 }
-.restaurant-info h3 {
+.restaurant__card--info h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24;
   font-size: 18px;
 }
-.restaurant-info p {
+.restaurant__card--info p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -497,14 +496,20 @@ a {
     padding: 20px 0;
     margin-top: 0;
   }
+  .header__container--location {
+    box-shadow: 0 0 0 0;
+  }
   .steps, .restaurants {
     padding: 30px 180px;
   }
-  .step-cards {
+  .steps__cards {
     display: flex;
     flex-direction: row;
   }
-  .restaurant-cards {
+  .steps__cards .steps__card {
+    margin: 0 23px 25px 13px;
+  }
+  .restaurants__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -532,9 +537,16 @@ a {
   }
 }
 @media (min-width: 1024px) and (max-width: 1270px) {
-  .step-cards {
+  .steps__cards {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 545px) and (max-width: 1024px) {
+  .restaurants__title, .steps__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
