@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"load.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/load.scss"],"names":[],"mappings":"AAIA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA,YACA;EACA;EACA;;;AAEJ;EACI;IACI;;EAEJ;IACI;;;AAIR;EACI;IAAK;;EAEL;IAAO;IACH","file":"load.css"}

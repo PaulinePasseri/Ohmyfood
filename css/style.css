@@ -66,6 +66,46 @@ input[type=checkbox]:checked + .heart-container .heart-icon2 {
     right: 250px;
   }
 }
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 2s ease-in-out 2s both;
+}
+
+.loader {
+  border-radius: 5px;
+  width: 100px;
+  height: 10px;
+  background: linear-gradient(90deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background-repeat: no-repeat;
+  animation: load 1.5s 1 forwards, fadeOut 1s ease-in-out 2s forwards;
+}
+
+@keyframes load {
+  0% {
+    background-size: 0;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .header__container {
   display: flex;
   flex-direction: column;
