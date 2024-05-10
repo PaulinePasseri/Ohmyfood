@@ -10,7 +10,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
   box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: all 350ms;
@@ -175,7 +175,7 @@ input[type=checkbox]:checked + .heart-container .heart-icon2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18;
+  font-size: 18px;
   font-size: 16px;
 }
 .menu__section--dishes {
@@ -229,7 +229,7 @@ input[type=checkbox]:checked + .heart-container .heart-icon2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24;
+  font-size: 24px;
   padding-right: 15px;
   justify-content: flex-end;
 }
@@ -279,7 +279,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -341,7 +341,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .hero__container {
@@ -355,7 +355,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24;
+  font-size: 24px;
   padding: 0 50px;
 }
 .hero__container--subtitle {
@@ -392,7 +392,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
 }
 .steps__card--info i {
   margin: 0 27px;
@@ -417,7 +417,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .restaurants {
@@ -464,7 +464,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
   font-size: 14px;
   border-radius: 2px;
   text-align: center;
@@ -484,21 +484,22 @@ a {
   position: relative;
   padding: 16px 25px 12px 13px;
 }
-.restaurant__card--info h3, .restaurant__card--info p {
+.restaurant__card--info h3,
+.restaurant__card--info p {
   margin: 0;
 }
 .restaurant__card--info h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24;
+  font-size: 24px;
   font-size: 18px;
 }
 .restaurant__card--info p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18;
+  font-size: 18px;
   font-size: 17px;
 }
 
@@ -521,7 +522,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
 }
 .footer__container--link {
@@ -547,7 +548,8 @@ a {
   .header__container--location {
     box-shadow: 0 0 0 0;
   }
-  .steps, .restaurants {
+  .steps,
+  .restaurants {
     padding: 30px 180px;
   }
   .steps__cards {
@@ -591,7 +593,8 @@ a {
   }
 }
 @media (min-width: 545px) and (max-width: 1024px) {
-  .restaurants__title, .steps__title {
+  .restaurants__title,
+  .steps__title {
     display: flex;
     align-items: center;
     justify-content: center;

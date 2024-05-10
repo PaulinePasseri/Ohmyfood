@@ -10,7 +10,7 @@ $secondary-color: #FF79DA;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .main-btn {
@@ -25,6 +25,7 @@ $secondary-color: #FF79DA;
     opacity: 1;
     transition: all 350ms;
     display: inline-block;
+
     &:hover {
         box-shadow: 0px 3px 8px 6px rgba(0, 0, 0, 0.16);
         opacity: 0.8;

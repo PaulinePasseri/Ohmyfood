@@ -6,7 +6,7 @@ $secondary-color: #FF79DA;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18;
+    font-size: 18px;
 }
 
 input[type="checkbox"] {
@@ -30,7 +30,7 @@ input[type="checkbox"] {
     transition: 100ms ease;
 }
 
-input[type="checkbox"]:checked + .heart-container .heart-icon2 {
+input[type="checkbox"]:checked+.heart-container .heart-icon2 {
     opacity: 1;
 }
 

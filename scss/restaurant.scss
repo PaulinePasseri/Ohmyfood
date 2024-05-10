@@ -19,21 +19,21 @@ $darkgrey: #353535;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 24;
+    font-size: 24px;
 }
 
 @mixin Roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 16;
+    font-size: 16px;
 }
 
 @mixin Roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18;
+    font-size: 18px;
 }
 
 // Flex
@@ -60,17 +60,20 @@ $darkgrey: #353535;
 .header__container {
     @include flex-column();
     position: relative;
+
     &--navbar {
         display: flex;
         flex-direction: row;
         align-items: center;
         position: relative;
     }
+
     &--arrow {
         font-size: 20px;
         position: absolute;
         left: 23px;
     }
+
     &--img {
         width: 100%;
         height: 275px;
@@ -91,17 +94,20 @@ $darkgrey: #353535;
     bottom: 60px;
     margin: 0 auto -60px auto;
     max-width: 1055px;
+
     &--title {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 32px 4px;
+
         & h1 {
-        @include Shrikhand();
-        margin: 0;
+            @include Shrikhand();
+            margin: 0;
         }
     }
+
     &--btn {
         display: flex;
         justify-content: center;
@@ -111,20 +117,24 @@ $darkgrey: #353535;
 .menu__section {
     margin-bottom: 40px;
     max-width: 634px;
+
     &--title {
         border-bottom: 3px solid $lightgreen;
         width: 40px;
+
         & h2 {
             margin: 0 0 5px 0;
             @include Roboto-light();
             font-size: 16px;
         }
     }
+
     &--dishes {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     &--dishCard {
         display: flex;
         flex-direction: row;
@@ -137,10 +147,12 @@ $darkgrey: #353535;
         cursor: pointer;
         @include box-shadow();
     }
+
     &--dishTxt {
         padding: 15px;
         width: calc(100% - 59px);
         overflow: hidden;
+
         & h3 {
             font-size: 18px;
             margin: 0;
@@ -148,6 +160,7 @@ $darkgrey: #353535;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
+
         & p {
             margin: 5px 0 0 0;
             font-size: 15px;
@@ -156,16 +169,19 @@ $darkgrey: #353535;
             text-overflow: ellipsis;
         }
     }
+
     &--dishCheck {
         display: flex;
         flex-direction: row;
         align-items: end;
         overflow: hidden;
+
         & i {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         & p {
             @include Roboto-bold();
             padding-right: 15px;
@@ -180,8 +196,10 @@ $darkgrey: #353535;
         width: 100%;
         min-width: 370px;
     }
+
     .menu__container {
         @include flex-column();
+
         &--title {
             display: flex;
             flex-direction: row;
