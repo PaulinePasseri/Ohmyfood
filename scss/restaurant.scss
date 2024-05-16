@@ -184,6 +184,7 @@ $darkgrey: #353535;
 
         & p {
             @include Roboto-bold();
+            font-size: 15px;
             padding-right: 15px;
             justify-content: flex-end;
         }
