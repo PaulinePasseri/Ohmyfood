@@ -14,12 +14,11 @@ $secondary-color: #FF79DA;
 }
 
 .main-btn {
-    text-decoration: none;
+    cursor: pointer;
     color: white;
     padding: 13px 19px;
     background: linear-gradient(0deg, $primary-color, $secondary-color);
     border-radius: 25px;
-    cursor: default;
     @include Roboto-medium();
     @include box-shadow();
     opacity: 1;
