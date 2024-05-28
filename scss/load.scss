@@ -23,7 +23,7 @@ $secondary-color: #FF79DA;
     background:
         linear-gradient(90deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
     background-repeat: no-repeat;
-    animation: load 1.5s 1 forwards, fadeOut 1s ease-in-out 2s forwards;
+    animation: load 1.5s 1 forwards;
 }
 
 @keyframes load {
