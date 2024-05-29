@@ -13,7 +13,7 @@ $secondary-color: #FF79DA;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 2s ease-in-out both;
+    animation: fadeOut 2s ease-in-out 2s both;
 }
 
 .loader {
@@ -22,6 +22,7 @@ $secondary-color: #FF79DA;
     height: 10px;
     background:
         linear-gradient(90deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    background-repeat: no-repeat;
     animation: load 1.5s 1 forwards;
 }
 
